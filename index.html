@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NAME — ROLE | Portfolio</title>
+  <meta name="description" content="SHORT BIO | ROLE | LOCATION. Portfolio showcasing projects and contact information." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme color for mobile -->
+  <meta name="theme-color" content="#0b5ed7">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <span class="brand-circle me-2" aria-hidden="true">KN</span>
+          <span class="visually-hidden">Homepage</span>
+          <span class="d-none d-md-inline ms-1">NAME</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            <li class="nav-item d-flex align-items-center ms-2">
+              <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false" title="Toggle dark mode">
+                <i class="bi bi-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero bg-light py-5">
+      <div class="container d-flex flex-column-reverse flex-lg-row align-items-center gap-4">
+        <div class="hero-text col-lg-7">
+          <h1 class="display-5 fw-bold">Hi, I'm Kundan Giriya</h1>
+          <p class="lead text-muted">A passionate PHP & Laravel Developer dedicated to building clean, scalable, and user-friendly web applications. I enjoy turning ideas into functional digital solutions and continuously improving my skills through real-world projects. With hands-on experience in Laravel, PHP, MySQL, JavaScript, and Next.js, I love creating applications that deliver smooth and modern user experiences.</p>
+          <p class="mb-3">
+            <a href="#projects" class="btn btn-primary btn-lg me-2">View Projects</a>
+            <a href="resume.pdf" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener">Download Resume</a>
+          </p>
+          <div class="social-links">
+            <a class="btn btn-outline-dark btn-sm me-2" href="https://github.com/Kundan16082001" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a class="btn btn-outline-dark btn-sm me-2" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image col-lg-4 text-center">
+          <!-- Placeholder profile image - replace with your photo -->
+          <img src="assets/img/profile-placeholder.png" alt="Profile photo placeholder" class="img-fluid rounded-circle shadow-sm profile-photo" width="220" height="220">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">About</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center d-lg-block d-none">
+            <img src="assets/img/profile-placeholder.png" alt="Profile photo placeholder" class="img-fluid rounded shadow-sm" width="220" height="220">
+          </div>
+          <div class="col-lg-8">
+            <p class="lead">I am a PHP & Laravel Developer with hands-on experience in building dynamic, scalable, and user-friendly web applications. I work primarily with Laravel, PHP, MySQL, JavaScript, and Next.js, and enjoy developing clean backend logic, secure authentication systems, and smooth dashboards. I’m passionate about learning new technologies and creating real-world solutions that enhance user experience.</p>
+            <ul class="list-unstyled">
+              <li><strong>Role:</strong> PHP & Laravel Developer</li>
+              <li><strong>Location:</strong> Gondia,Maharashtra</li>
+              <li><strong>Contact:</strong> <a href="mailto:giriyakundan@gmail.com">giriyakundan@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row g-3">
+          <!-- Example skill card -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Frontend</h5>
+                <p class="card-text">HTML, CSS, Bootstrap, JavaScript (ES6+)</p>
+                <div class="mb-2">
+                  <div class="progress" role="progressbar" aria-label="Frontend skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+                    <div class="progress-bar" style="width:85%">85%</div>
+                  </div>
+                </div>
+                <div>
+                  <span class="badge bg-primary">Bootstrap</span>
+                  <span class="badge bg-secondary">Vanilla JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional skill cards -->
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Backend Development</h5>
+      <p class="card-text">PHP, Laravel, REST APIs, Authentication</p>
+      <div class="mb-2">
+        <div class="progress" role="progressbar" aria-label="Backend skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+          <div class="progress-bar bg-success" style="width:85%">85%</div>
+        </div>
+      </div>
+      <div>
+        <span class="badge bg-danger">Laravel</span>
+        <span class="badge bg-primary">PHP</span>
+        <span class="badge bg-info text-dark">APIs</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Frontend & UI</h5>
+      <p class="card-text">HTML, CSS, JavaScript, Bootstrap, Next.js</p>
+      <div class="mb-2">
+        <div class="progress" role="progressbar" aria-label="Frontend skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+          <div class="progress-bar bg-warning" style="width:70%">70%</div>
+        </div>
+      </div>
+      <div>
+        <span class="badge bg-primary">JavaScript</span>
+        <span class="badge bg-info text-dark">Bootstrap</span>
+        <span class="badge bg-dark">Next.js</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Tools</h5>
+      <p class="card-text">Git, GitHub, VS Code, Postman</p>
+      <div class="mb-2">
+        <div class="progress" role="progressbar" aria-label="Tools skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+          <div class="progress-bar bg-secondary" style="width:80%">80%</div>
+        </div>
+      </div>
+      <div>
+        <span class="badge bg-dark">Git</span>
+        <span class="badge bg-secondary">GitHub</span>
+        <span class="badge bg-info text-dark">Postman</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Projects</h2>
+          <small class="text-muted">Showing latest repos from GitHub user <strong>Kundan16082001</strong></small>
+        </div>
+
+        <!-- Projects container -->
+        <div id="projects-grid" class="row g-4">
+          <!-- JS will inject project cards here -->
+          <div id="projects-loading" class="text-center py-5 w-100">
+            <div class="spinner-border" role="status" aria-hidden="true"></div>
+            <div class="mt-2 text-muted">Loading projects…</div>
+          </div>
+        </div>
+
+        <div id="projects-error" class="mt-4" aria-live="polite"></div>
+      </div>
+
+      <!-- Project Details Modal (Bootstrap) -->
+      <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="projectModalLabel" class="modal-title">Project details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="projectModalDescription" class="mb-2"></p>
+              <ul class="list-unstyled">
+                <li><strong>Language:</strong> <span id="projectModalLang"></span></li>
+                <li><strong>Stars:</strong> <span id="projectModalStars"></span></li>
+                <li><strong>Repo:</strong> <a id="projectModalRepo" href="#" target="_blank" rel="noopener">Open on GitHub</a></li>
+                <li><strong>Demo:</strong> <a id="projectModalDemo" href="#" target="_blank" rel="noopener">Live demo</a></li>
+              </ul>
+              <div id="projectModalExtra" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <div class="row">
+          <div class="col-lg-7">
+            <!-- Contact form: client-side validation and mailto fallback -->
+            <form id="contact-form" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" class="form-control" type="text" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" class="form-control" type="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" rows="5" required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <button id="contact-submit" class="btn btn-primary" type="submit">Send message</button>
+              <div id="contact-result" class="mt-3" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Prefer email or WhatsApp?</h5>
+                <p class="card-text">You can also reach me on WhatsApp using the floating button at bottom-right.</p>
+                <p class="card-text"><strong>Email:</strong> <a href="mailto:giriyakundan@gmail.com">giriyakundan@gmail.com</a></p>
+                <p class="card-text"><strong>Location:</strong> Gondia, Maharashtra</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-white border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="small text-muted">© <span id="year"></span> NAME — Built with Bootstrap & vanilla JS</div>
+      <div class="mt-2 mt-md-0">
+        <a class="text-muted me-3" href="#home">Home</a>
+        <a class="text-muted me-3" href="#projects">Projects</a>
+        <a class="text-muted" href="https://github.com/Kundan16082001" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a id="whatsapp-btn" class="btn btn-success whatsapp-btn shadow-lg" href="https://wa.me/7378997339?text=Hello%20%F0%9F%98%8A%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect" target="_blank" rel="noopener" aria-label="Contact via WhatsApp" data-bs-toggle="tooltip" data-bs-placement="left" title="Message me on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

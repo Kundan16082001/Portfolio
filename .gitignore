@@ -1,0 +1,13 @@
+# Node (if you use any local toolchains)
+node_modules/
+dist/
+.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/

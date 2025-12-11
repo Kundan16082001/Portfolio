@@ -1,0 +1,123 @@
+/* Custom stylesheet with CSS variables, dark mode, and tweaks */
+/* Mobile-first styles; overrides Bootstrap where needed */
+
+/* CSS variables for theme */
+:root{
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #6c757d;
+  --primary: #0b5ed7; /* accent */
+  --accent-2: #16a085;
+  --card-bg: #ffffff;
+  --shadow: 0 6px 20px rgba(16,24,40,0.06);
+  --radius: 12px;
+  --gap: 1rem;
+  --transition: 250ms ease;
+  --max-width: 1100px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Dark theme variables */
+:root.dark{
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --muted: #a6b4c6;
+  --primary: #2a8cff;
+  --card-bg: #071022;
+  --shadow: none;
+}
+
+/* Apply */
+html,body{
+  height:100%;
+  background:var(--bg);
+  color:var(--text);
+  transition: background var(--transition), color var(--transition);
+}
+
+/* Navbar brand circle */
+.brand-circle{
+  width:36px;
+  height:36px;
+  background:var(--primary);
+  color:white;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-weight:600;
+  box-shadow:var(--shadow);
+}
+
+/* Hero */
+.hero{
+  padding-top:3.5rem;
+  padding-bottom:3.5rem;
+}
+.profile-photo{
+  border: 6px solid rgba(11,94,215,0.08);
+}
+
+/* Cards */
+.card{
+  border:0;
+  background:var(--card-bg);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+/* Floating WhatsApp button */
+.whatsapp-btn{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:1100;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.25rem;
+  box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Footer link color */
+footer a{
+  color:var(--muted);
+  text-decoration:none;
+}
+
+/* Modal tweaks */
+.modal-content{
+  background:var(--card-bg);
+  color:var(--text);
+}
+
+/* Small utility to keep content centered on wide screens */
+.container{
+  max-width:var(--max-width);
+}
+
+/* Responsive adjustments */
+@media (min-width:992px){
+  .hero{ padding-top:5rem; padding-bottom:5rem; }
+}
+
+/* Fade-in on scroll (simple) */
+.fade-in{
+  opacity:0;
+  transform: translateY(8px);
+  transition: opacity 450ms ease, transform 450ms ease;
+}
+.fade-in.visible{
+  opacity:1;
+  transform:none;
+}
+
+/* Contact form success message */
+#contact-result.success{ color: green; }
+#contact-result.error{ color: red; }
